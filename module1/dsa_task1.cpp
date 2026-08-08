@@ -1,32 +1,16 @@
-#include <iostream> // for printing content on the screen
-using namespace std; 
 
+// 🚀 Task 1: Array Implementation and Traversal (1D Array) 
 
-// Title: Array Insertion (End and Position)
+#include <iostream>
+using namespace std;
 
 int main () {
-    int arr[100] = {10, 20, 30, 40, 50};
-    int n = 5; // length
+    int doom_data[5] = {11, 22, 33, 44, 55}; // it takes 20 bytes
 
-    int pos = 1; // index element want to delete
-    
-    cout << "This is the first Array" << endl;
-    for (int i = 0; i < n; i++) {
-        cout << arr[i] << " ";
-    }
-    cout << endl;
-
-    for (int i = pos; i < n - 1; i ++) {
-        arr[i] = arr[i + 1];
-    }
-    n--;
-
-
-    // Title: Array Deletion (By Value or Position) 
-
-    cout << "This is the second Array" << endl;
-    for (int i = 0; i < n; i++) {
-        cout << arr[i] << " " ;
+    cout << "------Doom's Memory Map------ " << endl;
+    for (int i = 0; i < 5; i++) {
+        cout << "Index [" << i << "] | Value: " << doom_data[i]
+             << " | Ram Address: " << &doom_data[i] << endl;
     }
 
     return 0;
