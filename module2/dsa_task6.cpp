@@ -1,59 +1,69 @@
-// Write a program to implement Queue operations (Enqueue, Dequeue) using an array. 
+// Task 6: Write a program to convert an infix expression to a postfix expression using stacks. 
 
 #include <iostream>
+#include <stack>   
+#include <string>  
 using namespace std;
 
-#define MAX 10
 
-int queue[MAX];
-int front = 0; // front side
-int rear = -1; // last side
-
-void enqueue(int val) {
-    if (rear == MAX -1) {
-        cout << "Queue is Full (Overflow)!\n";
-    } else {
-        rear++;
-        queue[rear] = val;
-        cout << "Added in Queue " << endl;
+int priority(char c) {
+    if (c == '^' ) {
+        return 3; // most powerful
     }
+    if (c == '*' || c == '/' ) {
+        return 2;
+    } 
+    if (c == '+' || c == '-' ) {
+        return 1; // weak
+    }
+    return -1; // no operator
 }
 
-void dequeue() {
-    if (front > rear) {
-        cout << "queue is empty (Overflow)!\n";
-    } else {
-        cout << queue[front] << "dequeue is success.\n";
-        front++;
-    }
-}
+void infixToPostfix(string s) {
+    stack<char> st; 
+    string result;  
 
-void display() {
-    if (front > rear) {
-        cout << "Queue is empty " << endl;
-    } else {
-        cout << "Current queue elements: ";
-        for (int i = front; i <= rear; i++) {
-            cout << queue[i] << " ";
+    for (int i = 0; i < s.length(); i++) {
+        char c = s[i];
+        if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9')) {
+            result += c; 
         }
-        cout << endl;
+        else if (c == '(') {
+            st.push('('); 
+        }
+        else if (c == ')') {
+            while (!st.empty() && st.top() != '(') {
+                result += st.top(); 
+            }
+            if (!st.empty()) {
+                st.pop();
+            }
+        }
+        else {
+            while (!st.empty() && priority(c) <= priority(st.top())) {
+                result += st.top(); 
+                st.pop();
+            }
+            st.push(c); 
+        }
     }
+
+   
+    while (!st.empty()) {
+        result += st.top();
+        st.pop();
+    }
+
+    
+    cout << "Postfix Expression: " << result << endl;
 }
 
-int main () {
-    enqueue(10);
-    enqueue(20);
-    enqueue(30);
-    enqueue(40);
-    enqueue(50);
-    enqueue(60);
-    enqueue(70);
-    enqueue(80);
-    enqueue(90);
-    enqueue(100);
-    display();
+int main() {
+    string exp = "A+B*C"; 
+    cout << "Infix Expression: " << exp << endl;
     
-
-    return  0;
+   
+    infixToPostfix(exp); 
     
+    return 0;
 }

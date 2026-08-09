@@ -1,66 +1,41 @@
-// Write a program to implement Stack operations (Push, Pop, Peek) using an array. 
+// Task 5: Write a program to implement push and pop operations on a stack using linear array. 
 
 #include <iostream>
 using namespace std;
 
-#define MAX 5 // size of the maximum stack elements
+int max_size = 5;
+int top = -1;
+int stack_array[5];
 
-int stack[MAX]; 
-int top = -1; // this means in starting, the stack is empty
-
-// push operation
-void push(int val) {
-    if (top == MAX -1) {
-        cout << "Stack overflow, cannot add Element" << endl;
+// push the element in the stack
+void push (int val) {
+    if (top == max_size - 1) { // for check stack is full or not
+        cout << "Stack Overflow! " << endl;
     } else {
-        top++;
-        stack[top] = val;
-        cout << "new value is " <<  stack[top] << endl;
-        cout << val << " Successfully pushed " << endl; 
+        top = top + 1; // top increase + 1
+        stack_array[top] = val;
+        cout << val << " Add in the stack " << endl;
     }
 }
 
-// pop operation 
 void pop () {
-    if (top == -1) {
-        cout << "Stack is empty" << endl;
+    if (top == -1 ) { // check stack is empty or not
+        cout << "Stack Underflow " << endl;
     } else {
-        cout << stack[top] << " use the pop method" << endl;
-        top--;
-    }
-}
-
-void peek () {
-    if (top == -1) {
-        cout << "Stack is empty" << endl;
-    } else {
-        cout << "The top element is: " << stack[top] << endl;
-    }
-}
-
-void display() {
-    if (top == -1) {
-        cout << "Stack is empty" << endl;
-    } else {
-        cout << "Current Stack elements: ";
-        for (int i = 0; i <= top; i++) {
-            cout << stack[i] << " ";
-        }
-        cout << endl;
+        cout << stack_array[top] << " Poped " << endl;
+        top = top - 1; // top down step one
     }
 }
 
 
 int main () {
-    push(45);
+
+    push(10);
+    push(20);
     push(30);
-    push(30345);
-    push(350);
-    push(3340);
-    push(3056);
-    push(3780);
-    push(32);
+    push(40);
+    push(50);
+    push(60);
     pop();
-    peek();
-    display();
+    return 0;
 }
