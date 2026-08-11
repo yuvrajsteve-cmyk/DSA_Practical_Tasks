@@ -14,73 +14,86 @@ struct Node {
 
 Node* head = NULL;
 
-
-// i. Insertion at beginning 
-void insertAtBeggining (int val) {
-    Node * newNode = new Node();
+void insertAtBeginning(int val) {
+    Node* newNode = new Node;
     newNode->data = val;
     newNode->next = head;
     head = newNode;
+    cout << "Success: Inserted " << val << " at beginning." << endl;
 }
 
-
-// ii. Insertion at end
 void insertAtEnd(int val) {
-    Node * lastNode = new Node();
+    Node* lastNode = new Node();
     lastNode->data = val;
     lastNode->next = NULL;
 
     if (head == NULL) {
         head = lastNode;
+        cout << "Success: Inserted " << val << " at end." << endl;
         return;
     }
-        Node * temp = head;
-        while(temp->next != NULL) {
+
+    Node* temp = head;
+    while (temp->next != NULL) {
         temp = temp->next;
     }
     temp->next = lastNode;
-
+    cout << "Success: Inserted " << val << " at end." << endl;
 }
 
-// iii. Insertion after a given node
-void insertAfterNode (int target, int val) {
-    Node* newNode = new Node ();
+void insertAfterNode(int target, int val) {
+    Node* newNode = new Node();
     newNode->data = val;
 
     Node* temp = head;
     while(temp != NULL && temp->data != target) {
         temp = temp->next;
     }
-    newNode->next = temp->next;
-    temp->next = newNode;
+    
+    if (temp != NULL) {
+        newNode->next = temp->next;
+        temp->next = newNode;
+        cout << "Success: Inserted " << val << " after " << target << "." << endl;
+    } else {
+        cout << "Error: Target node " << target << " not found!" << endl;
+    }
 }
 
-int main () {
-    insertAtBeggining(10);
-    insertAtBeggining(20);
-    insertAtBeggining(30);
+void traverseList() {
+    if (head == NULL) {
+        cout << "List is Empty" << endl;
+        return;
+    }
+    
+    Node* temp = head;
+    cout << "Your Train: ";
+    while(temp != NULL) {
+        cout << temp->data << " -> ";
+        temp = temp->next;
+    }
+    cout << "NULL" << endl;
+}
 
-    cout << "Inserting 99 after 20....." << endl;
-    insertAfterNode(20, 99);
+int main() {
+    cout << "=== DOOM'S LINKED LIST TEST ===" << endl << endl;
 
-   cout << "Doom's End Element Insertion...." << endl;
+    // 1. Test Insertion at Beginning
+    insertAtBeginning(10);
+    insertAtBeginning(20);
+    
+    // 2. Test Insertion at End
+    insertAtEnd(100);
+    insertAtEnd(120);
 
-   insertAtEnd(100);
-   insertAtEnd(120);
-   
+    // 3. Test Insertion After a Node
+    insertAfterNode(10, 99);
 
-   Node* temp = head;
-   cout << "Your Train! ";
-   while(temp != NULL) {
-    cout << temp->data << " -> ";
-    temp = temp->next;
-   }
+    cout << endl;
+    
+    // 4. Test Traversing
+    traverseList();
 
-   cout << "NULL" << endl;
-
-   
-
-
+    cout << endl << "===============================" << endl;
     return 0;
 }
 
