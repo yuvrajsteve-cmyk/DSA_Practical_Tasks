@@ -14,6 +14,8 @@ struct Node {
 
 Node* head = NULL;
 
+
+// i. Insertion at beginning 
 void insertAtBeggining (int val) {
     Node * newNode = new Node();
     newNode->data = val;
@@ -21,20 +23,46 @@ void insertAtBeggining (int val) {
     head = newNode;
 }
 
+
+// ii. Insertion at end
+void insertAtEnd(int val) {
+    Node * lastNode = new Node();
+    lastNode->data = val;
+    lastNode->next = NULL;
+
+    if (head == NULL) {
+        head = lastNode;
+        return;
+    }
+        Node * temp = head;
+        while(temp->next != NULL) {
+        temp = temp->next;
+    }
+    temp->next = lastNode;
+
+}
+
 int main () {
-    cout << "Doom's Train is Ready! " << endl;
     insertAtBeggining(10);
     insertAtBeggining(20);
     insertAtBeggining(30);
 
-    Node* temp = head;
-    cout << "Your train: ";
+   cout << "Doom's End Element Insertion...." << endl;
 
-    while (temp != NULL) {
-        cout << temp->data << " -> ";
-        temp = temp->next;
-    }
-    cout << "NULL" << endl;
+   insertAtEnd(100);
+   insertAtEnd(120);
+   
+
+   Node* temp = head;
+   cout << "Your Train! ";
+   while(temp != NULL) {
+    cout << temp->data << " -> ";
+    temp = temp->next;
+   }
+
+   cout << "NULL" << endl;
+
+   
 
 
     return 0;
