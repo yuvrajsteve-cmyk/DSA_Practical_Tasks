@@ -42,10 +42,26 @@ void insertAtEnd(int val) {
 
 }
 
+// iii. Insertion after a given node
+void insertAfterNode (int target, int val) {
+    Node* newNode = new Node ();
+    newNode->data = val;
+
+    Node* temp = head;
+    while(temp != NULL && temp->data != target) {
+        temp = temp->next;
+    }
+    newNode->next = temp->next;
+    temp->next = newNode;
+}
+
 int main () {
     insertAtBeggining(10);
     insertAtBeggining(20);
     insertAtBeggining(30);
+
+    cout << "Inserting 99 after 20....." << endl;
+    insertAfterNode(20, 99);
 
    cout << "Doom's End Element Insertion...." << endl;
 
