@@ -60,11 +60,29 @@ void deleteFromEnd() {
     temp->next = NULL;
 }
 
+// iii. Deletion after a given node 
+void deleteAfterNode (int target) {
+    if(head == NULL) return;
+
+    Node* temp = head;
+    
+    while (temp != NULL && temp->data != target) {
+        temp = temp->next;
+    } 
+
+    if (temp != NULL && temp->next != NULL) {
+        Node* toDelete = temp->next;
+        temp->next = toDelete->next;
+        delete toDelete;
+    }
+}
+
 int main() {
     insertAtBeginning(10);
     insertAtBeginning(20);
     insertAtBeginning(30);
     insertAtBeginning(40);
+    insertAtBeginning(50);
     
     cout << "--- Original Train ---" << endl;
     traverseList(); 
@@ -76,6 +94,10 @@ int main() {
     cout << "\nDeleting from end..." << endl;
     deleteFromEnd();
     traverseList(); 
+
+    cout << "\nDeletion after a given node...." << endl;
+    deleteAfterNode(30);
+    traverseList();
 
     return 0;
 }
