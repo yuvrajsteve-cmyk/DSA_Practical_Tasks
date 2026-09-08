@@ -3,27 +3,26 @@
 #include <iostream>
 using namespace std;
 
-class ArrayOperations {
+class Numbers {
     public:
-        int hieght (int arr[], int n, int max_hieght) {
-            for (int i = 0; i < n; i++) {
-                if(arr[i] > max_hieght) {
-                    max_hieght = arr[i];
+        int Number(int arr[], int n, int target, int count) {
+            for(int i = 0; i < n; i++){
+                if (arr[i] == target){
+                    count++;
                 }
             }
-            cout << "No Hieght Found: ";
-            return max_hieght;
+            return count;
         }
 };
 
+
 int main () {
-    int hightes[5] = {1200, 2500, 1800, 3100, 2200};
-    int max_height = hightes[0];
+    int arr[5] = {10, 23, 10, 56, 10};
+    int count = 0;
 
-    ArrayOperations Hii;
-    int result = Hii.hieght(hightes, 5, max_height);
-
-    cout << "Hight Found: " << result << endl;
+    Numbers num;
+    int result = num.Number(arr, 5, 23, count);
+    cout << "The Number is: " << result << endl;
 
     return 0;
 }
