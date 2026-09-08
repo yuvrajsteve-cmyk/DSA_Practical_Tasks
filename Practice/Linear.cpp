@@ -3,27 +3,26 @@
 #include <iostream>
 using namespace std;
 
-class SearchMachine {
-    public: 
-    int linearSearch (int arr[], int n, int target){
-        for (int i = 0; i < n; i++) {
-            if (arr[i] == target) {
-                return i;
+class ArrayOperations {
+    public:
+        int hieght (int arr[], int n, int target) {
+            for (int i = 0; i < n; i++) {
+                if(arr[i] == target) {
+                    return i;
+                }
             }
+            cout << "No Hieght Found: ";
+            return -1;
         }
-        cout << "Not found: " ;
-        return -1;
-    }
 };
 
 int main () {
-    int arr[10] = {10, 23, 32, 56, 78, 65, 56, 34, 23, 90};
+    int hightes[5] = {1200, 2500, 1800, 3100, 2200};
 
-    SearchMachine sear;
-    int result = sear.linearSearch(arr, 5, 40);
+    ArrayOperations Hii;
+    int result = Hii.hieght(hightes, 5, 2200);
 
-    cout << "The liner Search is : " << result << endl;
-
+    cout << "Hight Found: " << result << endl;
 
     return 0;
 }
