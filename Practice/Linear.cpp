@@ -1,28 +1,34 @@
 
 
+
 #include <iostream>
 using namespace std;
 
-class Numbers {
+class Reverse {
     public:
-        int Number(int arr[], int n, int target, int count) {
-            for(int i = 0; i < n; i++){
-                if (arr[i] == target){
-                    count++;
+        int Count(int arr[], int n, int start, int end){
+            for (int i = end; i < n; i++) {
+                if (start < end) {
+                    swap(arr[start], arr[end]);
+                    start++;
+                    end--;
                 }
             }
-            return count;
+            return start;
         }
 };
 
 
 int main () {
-    int arr[5] = {10, 23, 10, 56, 10};
-    int count = 0;
+    int arr[5] = {10, 23, 32, 56, 78};
+    int n = 5;
+    int start = 0;
+    int end = n - 1;
 
-    Numbers num;
-    int result = num.Number(arr, 5, 23, count);
-    cout << "The Number is: " << result << endl;
+    Reverse Number;
+    int result = Number.Count(arr, n, start, end);
+
+    cout << "The Result is: " << result << endl;
 
     return 0;
 }
