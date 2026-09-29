@@ -1,3 +1,0 @@
-C:/Users/wwwyu/OneDrive/Documents/B-TECH/Practical_Tasks/DSA/My_DSA_Project/build/CMakeFiles/dsa_app.dir
-C:/Users/wwwyu/OneDrive/Documents/B-TECH/Practical_Tasks/DSA/My_DSA_Project/build/CMakeFiles/edit_cache.dir
-C:/Users/wwwyu/OneDrive/Documents/B-TECH/Practical_Tasks/DSA/My_DSA_Project/build/CMakeFiles/rebuild_cache.dir
