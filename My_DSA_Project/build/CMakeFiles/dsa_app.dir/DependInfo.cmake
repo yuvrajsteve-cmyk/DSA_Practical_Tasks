@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/wwwyu/OneDrive/Documents/B-TECH/Practical_Tasks/DSA/My_DSA_Project/Dsa_Tasks/Linear_Search.cpp" "CMakeFiles/dsa_app.dir/Dsa_Tasks/Linear_Search.cpp.obj" "gcc" "CMakeFiles/dsa_app.dir/Dsa_Tasks/Linear_Search.cpp.obj.d"
+  "C:/Users/wwwyu/OneDrive/Documents/B-TECH/Practical_Tasks/DSA/My_DSA_Project/OOP_Tasks/errors.cpp" "CMakeFiles/dsa_app.dir/OOP_Tasks/errors.cpp.obj" "gcc" "CMakeFiles/dsa_app.dir/OOP_Tasks/errors.cpp.obj.d"
   "C:/Users/wwwyu/OneDrive/Documents/B-TECH/Practical_Tasks/DSA/My_DSA_Project/main.cpp" "CMakeFiles/dsa_app.dir/main.cpp.obj" "gcc" "CMakeFiles/dsa_app.dir/main.cpp.obj.d"
   )
 

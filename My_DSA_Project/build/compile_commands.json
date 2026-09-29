@@ -10,5 +10,11 @@
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\dsa_app.dir\\Dsa_Tasks\\Linear_Search.cpp.obj -c C:\\Users\\wwwyu\\OneDrive\\Documents\\B-TECH\\Practical_Tasks\\DSA\\My_DSA_Project\\Dsa_Tasks\\Linear_Search.cpp",
   "file": "C:/Users/wwwyu/OneDrive/Documents/B-TECH/Practical_Tasks/DSA/My_DSA_Project/Dsa_Tasks/Linear_Search.cpp",
   "output": "CMakeFiles/dsa_app.dir/Dsa_Tasks/Linear_Search.cpp.obj"
+},
+{
+  "directory": "C:/Users/wwwyu/OneDrive/Documents/B-TECH/Practical_Tasks/DSA/My_DSA_Project/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\dsa_app.dir\\OOP_Tasks\\errors.cpp.obj -c C:\\Users\\wwwyu\\OneDrive\\Documents\\B-TECH\\Practical_Tasks\\DSA\\My_DSA_Project\\OOP_Tasks\\errors.cpp",
+  "file": "C:/Users/wwwyu/OneDrive/Documents/B-TECH/Practical_Tasks/DSA/My_DSA_Project/OOP_Tasks/errors.cpp",
+  "output": "CMakeFiles/dsa_app.dir/OOP_Tasks/errors.cpp.obj"
 }
 ]

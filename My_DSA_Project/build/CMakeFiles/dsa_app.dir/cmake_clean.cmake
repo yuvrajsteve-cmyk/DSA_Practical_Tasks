@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/dsa_app.dir/Dsa_Tasks/Linear_Search.cpp.obj"
   "CMakeFiles/dsa_app.dir/Dsa_Tasks/Linear_Search.cpp.obj.d"
+  "CMakeFiles/dsa_app.dir/OOP_Tasks/errors.cpp.obj"
+  "CMakeFiles/dsa_app.dir/OOP_Tasks/errors.cpp.obj.d"
   "CMakeFiles/dsa_app.dir/main.cpp.obj"
   "CMakeFiles/dsa_app.dir/main.cpp.obj.d"
   "dsa_app.exe"

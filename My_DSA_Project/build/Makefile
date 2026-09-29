@@ -152,6 +152,30 @@ Dsa_Tasks/Linear_Search.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\dsa_app.dir\build.make CMakeFiles/dsa_app.dir/Dsa_Tasks/Linear_Search.cpp.s
 .PHONY : Dsa_Tasks/Linear_Search.cpp.s
 
+OOP_Tasks/errors.obj: OOP_Tasks/errors.cpp.obj
+.PHONY : OOP_Tasks/errors.obj
+
+# target to build an object file
+OOP_Tasks/errors.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dsa_app.dir\build.make CMakeFiles/dsa_app.dir/OOP_Tasks/errors.cpp.obj
+.PHONY : OOP_Tasks/errors.cpp.obj
+
+OOP_Tasks/errors.i: OOP_Tasks/errors.cpp.i
+.PHONY : OOP_Tasks/errors.i
+
+# target to preprocess a source file
+OOP_Tasks/errors.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dsa_app.dir\build.make CMakeFiles/dsa_app.dir/OOP_Tasks/errors.cpp.i
+.PHONY : OOP_Tasks/errors.cpp.i
+
+OOP_Tasks/errors.s: OOP_Tasks/errors.cpp.s
+.PHONY : OOP_Tasks/errors.s
+
+# target to generate assembly for a file
+OOP_Tasks/errors.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dsa_app.dir\build.make CMakeFiles/dsa_app.dir/OOP_Tasks/errors.cpp.s
+.PHONY : OOP_Tasks/errors.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -188,6 +212,9 @@ help:
 	@echo ... Dsa_Tasks/Linear_Search.obj
 	@echo ... Dsa_Tasks/Linear_Search.i
 	@echo ... Dsa_Tasks/Linear_Search.s
+	@echo ... OOP_Tasks/errors.obj
+	@echo ... OOP_Tasks/errors.i
+	@echo ... OOP_Tasks/errors.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

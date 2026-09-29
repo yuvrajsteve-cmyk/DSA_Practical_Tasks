@@ -1,5 +1,5 @@
-CMakeFiles/dsa_app.dir/main.cpp.obj: \
- C:\Users\wwwyu\OneDrive\Documents\B-TECH\Practical_Tasks\DSA\My_DSA_Project\main.cpp \
+CMakeFiles/dsa_app.dir/OOP_Tasks/errors.cpp.obj: \
+ C:\Users\wwwyu\OneDrive\Documents\B-TECH\Practical_Tasks\DSA\My_DSA_Project\OOP_Tasks\errors.cpp \
  C:/msys64/ucrt64/include/c++/16.1.0/iostream \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/requires_hosted.h \
  C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -146,5 +146,4 @@ CMakeFiles/dsa_app.dir/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/ostream.tcc \
  C:/msys64/ucrt64/include/c++/16.1.0/istream \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/istream.tcc \
- C:\Users\wwwyu\OneDrive\Documents\B-TECH\Practical_Tasks\DSA\My_DSA_Project\Dsa_Tasks/Linear_Search.h \
- C:\Users\wwwyu\OneDrive\Documents\B-TECH\Practical_Tasks\DSA\My_DSA_Project\OOP_Tasks/errors.h
+ C:\Users\wwwyu\OneDrive\Documents\B-TECH\Practical_Tasks\DSA\My_DSA_Project\OOP_Tasks\errors.h
