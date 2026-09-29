@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\dsa_app.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\dsa_app.dir/objects.a @CMakeFiles\dsa_app.dir\objects1.rsp
+C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\dsa_app.dir/objects.a -Wl,--no-whole-archive -o dsa_app.exe -Wl,--out-implib,libdsa_app.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\dsa_app.dir\linkLibs.rsp
