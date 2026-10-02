@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Dsa_Tasks/Linear_Search.h"
 #include "OOP_Tasks/errors.h"
+#include "OOP_Tasks/array.h"
 using namespace std;
 
 
@@ -10,6 +11,7 @@ int main() {
     cout << "=== DOOM LEVEL DSA APP ===\n";
     cout << "1. Linear Search \n";
     cout << "2. Printer Task (OOP/Errors) \n";
+    cout << "3. Array Task (OOP/Array) \n";
     cout << "Chose Any : ";
     cin >> choice;
    
@@ -33,7 +35,12 @@ int main() {
     }
     else if (choice == 2) {
         runPrinterTask();
-    } else {
+    } 
+    else if (choice == 3) {
+        int localArray[] = {10, 20, 30, 40, 50, 60, 70};
+        printMyArray(localArray, 7);
+    }
+    else {
         cout << "Wrong Number!\n";
     }
 
