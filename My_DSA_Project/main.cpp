@@ -4,6 +4,7 @@
 #include "OOP_Tasks/array.h"
 #include "OOP_Tasks/employee.h"
 #include "OOP_Tasks/containers.h"
+#include "Dsa_Tasks/queue.h"
 using namespace std;
 
 
@@ -16,6 +17,7 @@ int main() {
     cout << "3. Array Task (OOP/Array) \n";
     cout << "4. Employee Task (OOP/Employee) \n";
     cout << "5. STL Containers Task \n";
+    cout << "6. Queue \n";
     cout << "Chose Any : ";
     cin >> choice;
    
@@ -49,6 +51,9 @@ int main() {
     }
     else if (choice == 5){
         runContainerTask();
+    }
+    else if (choice == 6) {
+        runQueueTask();
     }
     else {
         cout << "Wrong Number!\n";

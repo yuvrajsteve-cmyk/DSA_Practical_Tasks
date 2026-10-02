@@ -12,5 +12,7 @@ add_executable(dsa_app
     OOP_Tasks/employee.h
     OOP_Tasks/containers.h
     OOP_Tasks/containers.cpp
+    Dsa_Tasks/queue.h
+    Dsa_Tasks/queue.cpp
 )
 
