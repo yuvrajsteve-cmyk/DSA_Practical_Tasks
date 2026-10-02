@@ -10,5 +10,7 @@ add_executable(dsa_app
     OOP_Tasks/array.cpp
     OOP_Tasks/employee.cpp
     OOP_Tasks/employee.h
+    OOP_Tasks/containers.h
+    OOP_Tasks/containers.cpp
 )
 

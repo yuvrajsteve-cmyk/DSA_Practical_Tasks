@@ -3,6 +3,7 @@
 #include "OOP_Tasks/errors.h"
 #include "OOP_Tasks/array.h"
 #include "OOP_Tasks/employee.h"
+#include "OOP_Tasks/containers.h"
 using namespace std;
 
 
@@ -13,6 +14,8 @@ int main() {
     cout << "1. Linear Search \n";
     cout << "2. Printer Task (OOP/Errors) \n";
     cout << "3. Array Task (OOP/Array) \n";
+    cout << "4. Employee Task (OOP/Employee) \n";
+    cout << "5. STL Containers Task \n";
     cout << "Chose Any : ";
     cin >> choice;
    
@@ -43,6 +46,9 @@ int main() {
     }
     else if (choice == 4) {
         runEmployeeTask();
+    }
+    else if (choice == 5){
+        runContainerTask();
     }
     else {
         cout << "Wrong Number!\n";
