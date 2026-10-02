@@ -8,5 +8,7 @@ add_executable(dsa_app
     Dsa_Tasks/Linear_Search.cpp
     OOP_Tasks/errors.cpp
     OOP_Tasks/array.cpp
+    OOP_Tasks/employee.cpp
+    OOP_Tasks/employee.h
 )
 

@@ -2,6 +2,7 @@
 #include "Dsa_Tasks/Linear_Search.h"
 #include "OOP_Tasks/errors.h"
 #include "OOP_Tasks/array.h"
+#include "OOP_Tasks/employee.h"
 using namespace std;
 
 
@@ -39,6 +40,9 @@ int main() {
     else if (choice == 3) {
         int localArray[] = {10, 20, 30, 40, 50, 60, 70};
         printMyArray(localArray, 7);
+    }
+    else if (choice == 4) {
+        runEmployeeTask();
     }
     else {
         cout << "Wrong Number!\n";
